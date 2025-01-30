@@ -21,7 +21,7 @@ class SettingsView extends StatelessWidget {
             value: Provider.of<ThemeProvider>(context).themeData == darkMode,
             onChanged: (value) {
               Provider.of<ThemeProvider>(context, listen: false)
-                  .toggleTheme(value: value);
+                  .toggleDarkMode(value: value);
             },
             activeColor: Colors.red,
           )),
